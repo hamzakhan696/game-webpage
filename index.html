@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion Request Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Your Details</h1>
+    <p>
+      To request data deletion, please fill out the form below with your username, email, and select the source
+      (Facebook or Google) associated with your account. Your information will be sent to our team for processing.
+    </p>
+    <form action="https://formsubmit.co/hamzakhan288692@gmail.com" method="POST">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+          required
+          minlength="3"
+        >
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        >
+      </div>
+      <div class="form-group">
+        <label for="source">Source</label>
+        <select name="source" id="source" required>
+          <option value="" disabled selected>Select source</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Google">Google</option>
+        </select>
+      </div>
+      <!-- Hidden input for FormSubmit.co customization -->
+      <input type="hidden" name="_subject" value="New Form Submission">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="Thank you for your submission! We have received your data deletion request and will process it soon.">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
